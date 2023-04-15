@@ -18,7 +18,7 @@ services:
   db:
     image: mysql:5.7
     hostname: db
-    restart: always
+    restart: unless-stopped
     ports:
       - 3306:3306
     environment:
